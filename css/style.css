@@ -1,0 +1,232 @@
+/* цвет-фона-страницы/цвет-шрифта #ffffff
+цвет-фона-хедера #fafafa
+цвет-фона-героя #F1F1F2 
+первичный-цвет-кнопки rgba(28,28,28,0) вторичный-цвет-кнопки #F7941E
+цвет-фона-секции-Blogs-Ever #231F20 
+основной-цвет-шрифта #000000 */
+
+:root {
+  --bgc-page-color: #ffffff;
+  --bgc-header-color: #fafafa;
+  --bgc-hero-color: #f1f1f2;
+  --bgc-section-color: #231f20;
+  --font-prime-color: #000000;
+  --button-transparent-color: rgba(28, 28, 28, 0);
+  --button-secondary-color: #f7941e;
+}
+.list {
+  list-style: none;
+}
+
+body {
+  background-color: var(--bgc-page-color);
+  color: var(--font-prime-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+/* Header style */
+header {
+  background-color: var(--bgc-header-color);
+}
+
+.header_logo {
+  color: inherit;
+  font-family: Homemade Apple, cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2.17;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.header_logo:hover,
+.header_logo:focus,
+.header_nav_link:hover,
+.header_nav_link:focus,
+.events_link:hover,
+.events_link:focus {
+  color: var(--button-secondary-color);
+}
+
+.header_nav_link {
+  font-size: 18px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.current_link {
+  color: var(--button-secondary-color);
+}
+
+.button {
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.header_button {
+  color: var(--button-secondary-color);
+  background-color: var(--button-transparent-color);
+  border: 1px solid var(--button-secondary-color);
+  font-size: 18px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.header_button:hover,
+.header_button:focus {
+  color: var(--bgc-page-color);
+  background-color: var(--button-secondary-color);
+  border: 1px solid var(--button-secondary-color);
+}
+/* Hero style */
+
+.hero {
+  background-color: var(--bgc-hero-color);
+}
+
+.hero_title_first {
+  font-size: 56px;
+  line-height: 1.23;
+}
+
+.hero_text_first {
+  font-size: 20px;
+  line-height: 1.41;
+}
+
+.hero_button_first {
+  color: var(--bgc-page-color);
+  background-color: var(--button-secondary-color);
+  border: 1px solid var(--button-secondary-color);
+  font-size: 18px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero_button_first:hover,
+.hero_button_first:focus {
+  color: var(--button-secondary-color);
+  background-color: var(--button-transparent-color);
+  border: 1px solid var(--button-secondary-color);
+}
+
+.hero_title_secondary {
+  font-size: 32px;
+  line-height: 1.41;
+}
+
+.hero_text_secondary {
+  font-size: 20px;
+  line-height: 1.41;
+  text-align: justify;
+}
+
+.hero_button_secondary {
+  color: var(--button-secondary-color);
+  background-color: var(--button-transparent-color);
+  border: 1px solid var(--button-secondary-color);
+  font-size: 18px;
+  line-height: 1.33;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.hero_button_secondary:hover,
+.hero_button_secondary:focus {
+  color: var(--bgc-hero-color);
+  background-color: var(--button-secondary-color);
+  border: 1px solid var(--button-secondary-color);
+}
+
+/* Events style */
+
+.events_title {
+  font-size: 32px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.events_text {
+  font-size: 18px;
+  line-height: 1.33;
+  text-align: center;
+}
+
+.events_subtitle {
+  font-size: 20px;
+  line-height: 1.2;
+}
+
+.events_link {
+  color: inherit;
+  font-size: 14px;
+  line-height: 1.36;
+  text-decoration: none;
+}
+
+/* Sign up style */
+
+.Signup {
+  background-color: var(--button-secondary-color);
+}
+
+.Signup_title,
+.Signup_text {
+  font-size: 32px;
+  line-height: 1.41;
+}
+
+.Signup_first_button {
+  color: var(--bgc-page-color);
+  background-color: var(--bgc-section-color);
+  border: 1px solid var(--button-transparent-color);
+  font-size: 18px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+.Signup_first_button:hover,
+.Signup_first_button:focus {
+  color: var(--font-prime-color);
+  background-color: var(--button-transparent-color);
+  border: 1px solid var(--font-prime-color);
+}
+
+.Signup_secondary_button {
+  color: var(--font-prime-color);
+  background-color: var(--button-transparent-color);
+  border: 1px solid var(--font-prime-color);
+  font-size: 18px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.Signup_secondary_button:hover,
+.Signup_secondary_button:focus {
+  color: var(--bgc-page-color);
+  background-color: var(--bgc-section-color);
+  border: 1px solid var(--button-transparent-color);
+}
+
+/* Blogs style  */
