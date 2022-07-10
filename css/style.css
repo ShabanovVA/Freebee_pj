@@ -414,6 +414,8 @@ header {
 
 .blogs_review {
   display: flex;
+  margin-right: 135px;
+  margin-left: 135px;
 
   background-color: var(--bgc-section-color);
   color: var(--bgc-page-color);
@@ -425,11 +427,16 @@ header {
 }
 
 .blogs_review_title {
+  width: 492px;
+  margin-top: 27px;
+  margin-bottom: 60px;
+
   font-size: 48px;
   line-height: 1.21;
 }
 
 .blogs_review_link {
+  padding: 20px 20px 20px 0;
   color: inherit;
   font-size: 18px;
   line-height: 1.39;
@@ -448,8 +455,13 @@ header {
 .blogs_title_item {
   font-size: 24px;
   line-height: 1.42;
+  text-align: left;
 }
-.blogs_text {
+.blogs_text_item {
+  width: 470px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
   font-size: 18px;
   line-height: 1.39;
 }
@@ -462,11 +474,46 @@ header {
 }
 
 .blogs_group_two {
-  width: 492px;
   padding: 63px 200px 49px 78px;
 }
 
+.blogs_list {
+  display: flex;
+  padding-top: 40px;
+  margin-right: 135px;
+  margin-left: 135px;
+}
+
+.blogs_list_item {
+  display: block;
+  padding: 48px 48px 50px 48px;
+}
+
+.blogs_list_item:hover,
+.blogs_list_item:focus {
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.blogs_list_item:not(:last-child) {
+  margin-right: 30px;
+}
+
 /* Footer style */
+
+footer {
+  background-color: var(--bgc-header-color);
+  padding-top: 115px;
+  padding-bottom: 35px;
+}
+.footer_block {
+  display: flex;
+}
+
+.footer_list_first {
+  display: flex;
+  margin-left: 406px;
+  align-items: center;
+}
 
 .footer_link {
   color: inherit;
@@ -475,15 +522,16 @@ header {
   text-decoration: none;
 }
 
-.footer_list_additions {
-  font-size: 14px;
-  line-height: 1.43;
-  text-align: center;
+.footer_list_first_item:not(:last-child) {
+  margin-right: 81px;
 }
 
 .footer_logo {
+  margin-right: 141px;
+  margin-left: 141px;
+
   color: var(--button-secondary-color);
-  font-family: "Homemade Apple";
+  font-family: Homemade Apple, cursive;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -491,6 +539,24 @@ header {
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+.footer_list_secondary {
+  display: flex;
+  align-items: center;
+}
+
+.footer_list_secondary_item:not(:last-child) {
+  margin-right: 54px;
+}
+
+.footer_list_networks {
+  display: flex;
+  margin: 98px 572px 72px 572px;
+}
+
+.footer_list_netwarks_item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .footer_logo:hover,
@@ -506,4 +572,18 @@ header {
 .footer_list_networks_link:hover,
 .footer_list_networks_link:focus {
   color: var(--button-secondary-color);
+}
+
+.footer_list_additions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+}
+
+.footer_list_additions_item:not(:last-child) {
+  margin-right: 14px;
 }
