@@ -41,10 +41,10 @@
     </header>
     <main>
       <section class="hero">
-        <div class="containerc hero_container">
+        <div class="container hero_container">
           <ul class="hero_list list">
-            <li class="hero_list_item">
-              <div class="hero_content">
+            <li class="hero_list_item_first">
+              <div class="hero_content_first">
                 <h1 class="hero_title_first">
                   Find a gift for your wife or girlfriend
                 </h1>
@@ -57,13 +57,14 @@
                 </button>
               </div>
               <img
+                class="hero_img_first"
                 src="./image/girl_with_boyfrend.jpg"
                 alt="girl_with_boyfrend"
                 width="719"
               />
             </li>
-            <li class="hero_list_item">
-              <div class="hero_content">
+            <li class="hero_list_item_secondary">
+              <div class="hero_content_secondary">
                 <h2 class="hero_title_secondary">How we work</h2>
                 <p class="hero_text_secondary">
                   We’ve actually already asked hundreds of women what they want,
@@ -77,6 +78,7 @@
                 </button>
               </div>
               <img
+                class="hero_img_secondary"
                 src="./image/thank_you_card_lettering.jpg"
                 alt="thank_you_card_lettering"
                 width="721"
@@ -86,61 +88,71 @@
         </div>
       </section>
       <section class="events">
-        <div class="container">
+        <div class="container events_container">
           <h2 class="events_title">Gifts for all Occasions</h2>
           <p class="events_text">
             “Try our web app to find the best gifts for all occasions”
           </p>
           <ul class="events_list list">
-            <li>
+            <li class="events_list_item">
               <img
                 src="./image/Birthday.jpg"
                 alt="Inflatable balloon with inscription Happy Birthday!"
                 width="270"
               />
-              <h3 class="events_subtitle">Birthday</h3>
-              <a class="events_link" href="">See More ›</a>
+              <div class="events_list_item_content">
+                <h3 class="events_subtitle">Birthday</h3>
+                <a class="events_link" href="">See More ›</a>
+              </div>
             </li>
-            <li>
+            <li class="events_list_item">
               <img
                 src="./image/Anniversary.jpg"
                 alt="Gifts for wife"
                 width="270"
               />
-              <h3 class="events_subtitle">Anniversary</h3>
-              <a class="events_link" href="">See More ›</a>
+              <div class="events_list_item_content">
+                <h3 class="events_subtitle">Anniversary</h3>
+                <a class="events_link" href="">See More ›</a>
+              </div>
             </li>
-            <li>
+            <li class="events_list_item">
               <img
                 src="./image/Valentine.jpg"
                 alt="Valentine's Day Wish Cards"
                 width="270"
               />
-              <h3 class="events_subtitle">Valentine's Day</h3>
-              <a class="events_link" href="">See More ›</a>
+              <div class="events_list_item_content">
+                <h3 class="events_subtitle">Valentine's Day</h3>
+                <a class="events_link" href="">See More ›</a>
+              </div>
             </li>
-            <li>
+            <li class="events_list_item">
               <img
                 src="./image/Christmas.jpg"
                 alt="Christmas tree"
                 width="270"
               />
-              <h3 class="events_subtitle">Christmas</h3>
-              <a class="events_link" href="">See More ›</a>
+              <div class="events_list_item_content">
+                <h3 class="events_subtitle">Christmas</h3>
+                <a class="events_link" href="">See More ›</a>
+              </div>
             </li>
           </ul>
         </div>
       </section>
-      <section class="Signup">
-        <div class="container">
-          <h2 class="Signup_title"><strong>Ready to get started?</strong></h2>
-          <p class="Signup_text">Sign up or contact us</p>
-          <ul class="Signup_list list">
+      <section class="signup">
+        <div class="signup_container container">
+          <div class="signup_desc">
+            <h2 class="signup_title"><strong>Ready to get started?</strong></h2>
+            <p class="signup_text">Sign up or contact us</p>
+          </div>
+          <ul class="signup_list list">
             <li>
-              <button class="Signup_first_button button">Find gift now</button>
+              <button class="signup_first_button button">Find gift now</button>
             </li>
             <li>
-              <button class="Signup_secondary_button button">
+              <button class="signup_secondary_button button">
                 how it works
               </button>
             </li>
@@ -149,19 +161,24 @@
       </section>
       <section class="blogs">
         <div class="container">
-          <h2 class="blogs_title">Our Best Blogs Ever</h2>
-          <p class="blogs_text">
-            “Try our blog to find the best tips and tricks to select your gift”
-          </p>
+          <div class="blogs_group_one">
+            <h2 class="blogs_title">Our Best Blogs Ever</h2>
+            <p class="blogs_text">
+              “Try our blog to find the best tips and tricks to select your
+              gift”
+            </p>
+          </div>
           <div class="blogs_review">
             <img
               src="./image/young_people.jpg"
               alt="young people"
               width="400"
             />
-            <p class="blogs_review_man">Mr. John Doe</p>
-            <h3 class="blogs_review_title">The best way to wish your wife</h3>
-            <a class="blogs_review_link" href="">Read More</a>
+            <div class="blogs_group_two">
+              <p class="blogs_review_man">Mr. John Doe</p>
+              <h3 class="blogs_review_title">The best way to wish your wife</h3>
+              <a class="blogs_review_link" href="">Read More</a>
+            </div>
           </div>
           <ul class="blogs_list list">
             <li>
